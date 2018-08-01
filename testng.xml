@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none" thread-count="1"
+	preserve-order="true">
+	<listeners>
+		<listener class-name="com.naive.CPTests.Listener"></listener>
+	</listeners>
+
+
+	<test name="TestImg" thread-count="1">
+		<classes>
+			<class name="com.naive.CPTests.TestImg" />
+		</classes>
+	</test>
+
+	<test name="TestEmail" thread-count="1">
+		<classes>
+			<class name="com.naive.CPTests.TestEmail" />
+		</classes>
+	</test>
+	<test name="TestPass" thread-count="1">
+		<classes>
+			<class name="com.naive.CPTests.TestPass" />
+
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->
